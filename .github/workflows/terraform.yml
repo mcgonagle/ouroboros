@@ -3,6 +3,9 @@ name: Terraform R2 Run
 
 on: workflow_dispatch
 
+permissions:
+  actions: read
+
 jobs:
   terraform-run:
     runs-on: ubuntu-latest
