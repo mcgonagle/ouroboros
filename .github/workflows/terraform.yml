@@ -16,8 +16,8 @@ jobs:
         id: terrascan
         with:
           iac_type: ${{ vars.IAC_TYPE }}
-          iac_version: ${{ IAC_VERSION }}
-          policy_type: ${{ POLICY_TYPE }}
+          iac_version: ${{ vars.IAC_VERSION }}
+          policy_type: ${{ vars.POLICY_TYPE }}
           only_warn: true
           scm_token: ${{ secrets.SCM_ACCESS_TOKEN }}
           #verbose: true
