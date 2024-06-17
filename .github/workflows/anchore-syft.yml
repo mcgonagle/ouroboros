@@ -13,9 +13,7 @@
 # https://github.com/anchore/syft
 name: Anchore Syft SBOM scan
 
-on:
-  push:
-    branches: [ "main" ]
+on: workflow_dispatch
 
 permissions:
   contents: write
