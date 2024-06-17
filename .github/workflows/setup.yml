@@ -11,5 +11,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ vars.node_version }}
-      - run: npm install -g bats
+      - run: sudo npm install -g bats
       - run: bats -v
